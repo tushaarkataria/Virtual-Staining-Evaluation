@@ -215,7 +215,7 @@ def metrics_functionModelOutputs(pix2pix_result_path):
         num_res_units=2,
     ).to(device)
 
-    saved_state_dict = torch.load('/home/sci/tushar.kataria/Documents/VirtualStaining-Study/segmentation/best_metric_model_ihc_segmentationCDX2.pth')
+    saved_state_dict = torch.load('<Path to>/best_metric_model_ihc_segmentationCDX2.pth')
     model.load_state_dict(saved_state_dict, strict=True)
     post_trans = Compose([Activations(sigmoid=True), AsDiscrete(threshold=0.5)])
     model.eval()

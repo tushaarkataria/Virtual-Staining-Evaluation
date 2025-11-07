@@ -20,7 +20,7 @@ In our evaluation and coding set-up the image files were named as numbers such a
 
 - ```distributionMetrics-UNI2.py```  : Works the same as ```distributionMetrics.py```, just the encoder used for latent feature representation is taken from UNI-2 encoder. The code requires that ```uni-h2.bin``` be present in the same folder as this file. The binary file can be downloaded from https://huggingface.co/MahmoodLab/UNI2-h.
 
-- ```metricAll.py``` : Works similar to above mentioned code files where path to ```real_B``` and ```fake_B``` images need to be added in line 271, 276 and 284 for a single model evaluations. This code evaluates all patch-wise metrics for all images. This code requires access to a CDX2 segmentation model "best_metric_model_ihc_segmentationCDX2.pth". Which can be requested from the corresponding author. All the other code just has installation dependencies.
+- ```metricAll.py``` : Works similar to above mentioned code files where path to ```real_B``` and ```fake_B``` images need to be added in line 271, 276 and 284 for a single model evaluations. This code evaluates all patch-wise metrics for all images. This code requires access to a CDX2 segmentation model "best_metric_model_ihc_segmentationCDX2.pth" in line 218. Which can be requested from the corresponding author. All the other code just has installation dependencies.
 
 - ```preprocessing_WSI/preprocessingPipelineNew-CDX2.py```: PreProcessing code for Tissue Sampling. This code required path to WSI images in line 195 '.svs/.tiff files'. And a path to outputdirectory, where tissue can be saved. The tissue are saved in .h5 files.
 
