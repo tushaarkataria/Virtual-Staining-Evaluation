@@ -8,6 +8,9 @@
 - ```metricAll.py```: Calculated patch wise metrics, PSNR, SSIM, MSE and all segmentation metrics. Which can be later stored in a pandas dataframe. 
 - ```preprocessing_WSI/```: Contains the preprocessing code H&E-IHC registration and Automated Annotation of Glands on H&E using CDX2 thresholding.
 
+## Python Libraries
+The libraries required to run the above code are listed in the ```requirement.txt``` file. The exact versions of these libraries are not critical, as the code only relies on standard modules whose functionality remains consistent across versions.
+
 ## How to Use
 
 Most of the evaluation metrics codes assume that the real IHC images are stored in a folder named ```real_B```, and generated IHC by the model are stored in the same folder with a name ```fake_B```. Although that is not a hard constraint, as we have provided functions that work on two different paths as well.
